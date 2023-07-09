@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/aes.js"></script> 
+    <script src="js/Extentions.js"></script> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+  </head>
+  <body>
+    <section class="top-banner">
+      <div class="container">
+        <center>
+          <img style="width: 220px; height: 23vh"
+            src="./img/KH8F.gif"
+            alt="weather logo"
+            class="nav__logo"
+            id="logo"
+            
+          />
+          <h4 class="heading">Weather App</h4>
+        </center>
+        <div class="sub-title">
+          <div class="left-container">
+            <form>
+              <input
+                type="text"
+                style="padding: 20px"
+                placeholder="🔍 Search for a city"
+                autofocus
+              />
+              <button type="button" id="locate">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-geo-alt"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+                  />
+                  <path
+                    d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+              </button> 
+
+              <button type="submit" id="search">SEARCH</button>
+              <span class="msg"></span>
+            </form>
+          </div>
+          <div class="right-container" id="lang">
+            <button type="button" id="clear-all" class="clear-btn">
+              Clear All
+            </button>
+            <img
+              id="de"
+              src="./img/icons8-germany-96.png"
+              alt="German"
+              class="flag"
+            />
+            <img
+              id="en"
+              src="./img/icons8-great-britain-96.png"
+              alt="English"
+              class="flag"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ajax-section">
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <small>Coded by <span>❤</span> Suray Nazarova</small>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
