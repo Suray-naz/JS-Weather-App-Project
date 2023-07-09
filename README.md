@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project-04 : Weather Condition App (JS-04)
 
 ## Description
@@ -29,4 +30,6 @@ User story;
 🔥 You can use [OpenWeather Api](https://openweathermap.org/) for your app. 
 
 
+=======
+>>>>>>> c8527fb21e018965b5b33d57fa21e58f09d3d2f8
 
